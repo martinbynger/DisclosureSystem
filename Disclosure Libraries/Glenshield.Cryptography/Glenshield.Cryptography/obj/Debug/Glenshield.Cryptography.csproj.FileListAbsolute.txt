@@ -1,0 +1,12 @@
+E:\GIT\Disclosure Projects\Glenshield.Cryptography\Glenshield.Cryptography\bin\Debug\Glenshield.Cryptography.dll
+E:\GIT\Disclosure Projects\Glenshield.Cryptography\Glenshield.Cryptography\bin\Debug\Glenshield.Cryptography.pdb
+E:\GIT\Disclosure Projects\Glenshield.Cryptography\Glenshield.Cryptography\obj\Debug\Glenshield.Cryptography.csprojResolveAssemblyReference.cache
+E:\GIT\Disclosure Projects\Glenshield.Cryptography\Glenshield.Cryptography\obj\Debug\Glenshield.Cryptography.csproj.CoreCompileInputs.cache
+E:\GIT\Disclosure Projects\Glenshield.Cryptography\Glenshield.Cryptography\obj\Debug\Glenshield.Cryptography.dll
+E:\GIT\Disclosure Projects\Glenshield.Cryptography\Glenshield.Cryptography\obj\Debug\Glenshield.Cryptography.pdb
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Cryptography\Glenshield.Cryptography\bin\Debug\Glenshield.Cryptography.dll
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Cryptography\Glenshield.Cryptography\bin\Debug\Glenshield.Cryptography.pdb
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Cryptography\Glenshield.Cryptography\obj\Debug\Glenshield.Cryptography.csprojResolveAssemblyReference.cache
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Cryptography\Glenshield.Cryptography\obj\Debug\Glenshield.Cryptography.csproj.CoreCompileInputs.cache
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Cryptography\Glenshield.Cryptography\obj\Debug\Glenshield.Cryptography.dll
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Cryptography\Glenshield.Cryptography\obj\Debug\Glenshield.Cryptography.pdb
