@@ -6,7 +6,7 @@ namespace Glenshield.Communication
     public class AuthenticatedTcpClient : IEquatable<AuthenticatedTcpClient>
     {
 
-        private int clientID = 0;
+        private string clientID = "0";
         private string clientAuthentication = "";
         private int clientType = (int)Common.CommunicationClientType.None;
         public TcpClient tcpClient;
@@ -21,7 +21,7 @@ namespace Glenshield.Communication
             }
         }
 
-        public int ClientID
+        public string ClientID
         {
             get
             {
@@ -62,14 +62,7 @@ namespace Glenshield.Communication
 
         public bool IsAuthenticated()
         {
-            if (ClientID > 0)
-            {
                 return true;
-            }
-            else
-            {
-                return false;
-            }
         }
 
         private bool CanAuthenticateClient(Common.CommunicationAuthenticationData communicationAuthenticationData)

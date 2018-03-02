@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisclosureController", "DisclosureController\DisclosureController.csproj", "{003481AB-BFE7-488F-BA13-C8E489FFE1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glenshield.Communication", "..\Disclosure Libraries\Glenshield.Communication\Glenshield.Communication\Glenshield.Communication.csproj", "{162E080B-1E59-4DEE-B8F6-5ACA65BBF2B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glenshield.Cryptography", "..\Disclosure Libraries\Glenshield.Cryptography\Glenshield.Cryptography\Glenshield.Cryptography.csproj", "{62913B6D-AFAF-42FB-8903-338A83E70869}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{003481AB-BFE7-488F-BA13-C8E489FFE1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003481AB-BFE7-488F-BA13-C8E489FFE1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003481AB-BFE7-488F-BA13-C8E489FFE1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003481AB-BFE7-488F-BA13-C8E489FFE1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{162E080B-1E59-4DEE-B8F6-5ACA65BBF2B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162E080B-1E59-4DEE-B8F6-5ACA65BBF2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162E080B-1E59-4DEE-B8F6-5ACA65BBF2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162E080B-1E59-4DEE-B8F6-5ACA65BBF2B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62913B6D-AFAF-42FB-8903-338A83E70869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62913B6D-AFAF-42FB-8903-338A83E70869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62913B6D-AFAF-42FB-8903-338A83E70869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62913B6D-AFAF-42FB-8903-338A83E70869}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABF57874-538D-4CDA-9F1A-C838C8C7171C}
+	EndGlobalSection
+EndGlobal

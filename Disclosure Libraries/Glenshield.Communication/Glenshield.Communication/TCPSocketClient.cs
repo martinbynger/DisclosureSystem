@@ -75,7 +75,7 @@ namespace Glenshield.Communication
                 {
                     StreamWriter clientStreamWriter = new StreamWriter(tcpClient.GetStream(), System.Text.Encoding.Unicode);
                     clientStreamWriter.AutoFlush = true;
-                    await clientStreamWriter.WriteAsync(CryptographyService.Encrypt(messageToSend));
+                    await clientStreamWriter.WriteAsync(CryptographyService.EncryptForNetwork(messageToSend));
                 }
             }
         }
@@ -104,7 +104,7 @@ namespace Glenshield.Communication
                         }
 
                         readTextFromServer = new string(readMessageBuffer).Substring(0, readByteCount);
-                        OnRaiseTextReceivedEvent(new CommunicationMessage(CryptographyService.Decrypt(readTextFromServer), Common.CommunicationEventType.TextReceived));
+                        OnRaiseTextReceivedEvent(new CommunicationMessage(CryptographyService.DecryptFromNetwork(readTextFromServer), Common.CommunicationEventType.TextReceived));
 
                     }
                     catch

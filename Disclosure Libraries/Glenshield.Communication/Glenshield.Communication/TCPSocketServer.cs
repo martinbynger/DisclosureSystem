@@ -19,6 +19,7 @@ namespace Glenshield.Communication
         public EventHandler<CommunicationMessage> RaiseClientConnectedEvent;
         public EventHandler<CommunicationMessage> RaiseTextReceivedEvent;
         public EventHandler<CommunicationMessage> RaiseClientDisconnectedEvent;
+        public EventHandler<CommunicationMessage> RaiseClientAuthenticatedEvent;
 
         public bool KeepRunning { get; set; }
 
@@ -41,6 +42,11 @@ namespace Glenshield.Communication
         protected virtual void OnRaiseClientDisconnectedEvent(CommunicationMessage serverEventArguments)
         {
             RaiseClientDisconnectedEvent?.Invoke(this, serverEventArguments);
+        }
+
+        protected virtual void OnRaiseClientAuthenticatedEvent(CommunicationMessage serverEventArguments)
+        {
+            RaiseClientAuthenticatedEvent?.Invoke(this, serverEventArguments);
         }
 
         public async void StartListeningForIncomingConnection()
@@ -127,7 +133,7 @@ namespace Glenshield.Communication
                         }
 
                         readTextFromClient = new string(readBuffer).Substring(0, numberOfCharsReturned);
-                        HandleTextFromClient(CryptographyService.Decrypt(readTextFromClient), clientThatConnected);
+                        HandleTextFromClient(CryptographyService.DecryptFromNetwork(readTextFromClient), clientThatConnected);
                     }
                     catch
                     {
@@ -247,7 +253,7 @@ namespace Glenshield.Communication
             try
             {
                 AuthenticatedTcpClient clientToSendTo;
-                textMessageAsBytes = Encoding.Unicode.GetBytes(CryptographyService.Encrypt(communicationMessage.BuildCommunicationMessageText()));
+                textMessageAsBytes = Encoding.Unicode.GetBytes(CryptographyService.EncryptForNetwork(communicationMessage.BuildCommunicationMessageText()));
                 
                 clientToSendTo = allAuthenticatedClients.First(AuthenticatedTcpClient => AuthenticatedTcpClient.ClientID == communicationMessage.RecipientID);
                 clientToSendTo.tcpClient.GetStream().WriteAsync(textMessageAsBytes, 0, textMessageAsBytes.Length);

@@ -13,7 +13,8 @@ namespace Glenshield.Communication
         public enum CommunicationMessageType
         {
             None,
-            Login
+            Login,
+            CertificateRequest
         };
 
         public enum CommunicationEventType
@@ -48,7 +49,7 @@ namespace Glenshield.Communication
 
         public struct CommunicationAuthenticationData
         {
-            public int ID;
+            public string ID;
             public string Authentication;
             public CommunicationClientType Type;
         }

@@ -6,3 +6,11 @@ E:\GIT\Disclosure Projects\Glenshield.Communication\Glenshield.Communication\obj
 E:\GIT\Disclosure Projects\Glenshield.Communication\Glenshield.Communication\obj\Debug\Glenshield.Communication.pdb
 E:\GIT\Disclosure Projects\Glenshield.Communication\Glenshield.Communication\bin\Debug\Glenshield.Cryptography.dll
 E:\GIT\Disclosure Projects\Glenshield.Communication\Glenshield.Communication\bin\Debug\Glenshield.Cryptography.pdb
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Communication\Glenshield.Communication\bin\Debug\Glenshield.Communication.dll
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Communication\Glenshield.Communication\bin\Debug\Glenshield.Communication.pdb
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Communication\Glenshield.Communication\bin\Debug\Glenshield.Cryptography.dll
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Communication\Glenshield.Communication\bin\Debug\Glenshield.Cryptography.pdb
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Communication\Glenshield.Communication\obj\Debug\Glenshield.Communication.csprojResolveAssemblyReference.cache
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Communication\Glenshield.Communication\obj\Debug\Glenshield.Communication.csproj.CoreCompileInputs.cache
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Communication\Glenshield.Communication\obj\Debug\Glenshield.Communication.dll
+E:\GIT\DisclosureSystem\Disclosure Libraries\Glenshield.Communication\Glenshield.Communication\obj\Debug\Glenshield.Communication.pdb

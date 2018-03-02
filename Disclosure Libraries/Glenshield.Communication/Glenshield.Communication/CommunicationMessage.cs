@@ -5,138 +5,23 @@ namespace Glenshield.Communication
 
     public class CommunicationMessage : EventArgs
     {
-        public string AllText;
+        #region "Private variables"
 
+        private string allText;
         private int messageType = (int)Common.CommunicationMessageType.None;
         private int messageID = 0;
-        private int senderID = 0;
+        private string senderID = "";
         private string senderAuthentication="";
         private int senderType = 0;
-        private int recipientID = 0;
+        private string recipientID = "";
         private int recipientType = (int)Common.CommunicationClientType.None;
-        private int userID = 0;
+        private string userID = "";
         private string userAuthentication = "";
         private string messageData = "";
 
-        public int MessageID
-        {
-            get
-            {
-                return messageID;
-            }
-            set
-            {
-                messageID = value;
-            }
-        }
+        #endregion
 
-        public int MessageType
-        {
-            get
-            {
-                return messageType;
-            }
-            set
-            {
-                messageType = value;
-            }
-        }
-
-        public int SenderID
-        {
-            get
-            {
-                return senderID;
-            }
-            set
-            {
-                senderID = value;
-            }
-        }
-
-        public string SenderAuthentication
-        {
-            get
-            {
-                return senderAuthentication;
-            }
-            set
-            {
-                senderAuthentication = value;
-            }
-        }
-
-        public int SenderType
-        {
-            get
-            {
-                return senderType;
-            }
-            set
-            {
-                senderType = value;
-            }
-        }
-
-        public int RecipientID
-        {
-            get
-            {
-                return recipientID;
-            }
-            set
-            {
-                recipientID = value;
-            }
-        }
-
-        public int RecipientType
-        {
-            get
-            {
-                return recipientType;
-            }
-            set
-            {
-                recipientType = value;
-            }
-        }
-
-        public int UserID
-        {
-            get
-            {
-                return userID;
-            }
-            set
-            {
-                userID = value;
-            }
-        }
-
-        public string UserAuthentication
-        {
-            get
-            {
-                return userAuthentication;
-            }
-            set
-            {
-                userAuthentication = value;
-            }
-        }
-
-        public string MessageData
-        {
-            get
-            {
-                return messageData;
-            }
-            set
-            {
-                messageData = value;
-            }
-        }
+        #region "Constructors"
 
         public CommunicationMessage(string AllTextFromClient, Common.CommunicationEventType theEventType)
         {
@@ -149,12 +34,12 @@ namespace Glenshield.Communication
                     string[] MessageReaderBuffer = AllTextFromClient.Split('#');
                     MessageType = int.Parse(MessageReaderBuffer[(int)Common.CommunicationMessagePositions.MessageType]);
                     MessageID = int.Parse(MessageReaderBuffer[(int)Common.CommunicationMessagePositions.MessageID]);
-                    SenderID = int.Parse(MessageReaderBuffer[(int)Common.CommunicationMessagePositions.SenderID]);
+                    SenderID = MessageReaderBuffer[(int)Common.CommunicationMessagePositions.SenderID];
                     SenderAuthentication = MessageReaderBuffer[(int)Common.CommunicationMessagePositions.SenderAuthentication];
                     SenderType = int.Parse(MessageReaderBuffer[(int)Common.CommunicationMessagePositions.SenderType]);
-                    RecipientID = int.Parse(MessageReaderBuffer[(int)Common.CommunicationMessagePositions.RecipientID]);
+                    RecipientID = MessageReaderBuffer[(int)Common.CommunicationMessagePositions.RecipientID];
                     RecipientType = int.Parse(MessageReaderBuffer[(int)Common.CommunicationMessagePositions.RecipientType]);
-                    UserID = int.Parse(MessageReaderBuffer[(int)Common.CommunicationMessagePositions.SenderType]);
+                    UserID = MessageReaderBuffer[(int)Common.CommunicationMessagePositions.SenderType];
                     UserAuthentication = MessageReaderBuffer[(int)Common.CommunicationMessagePositions.SenderAuthentication];
                     MessageData = MessageReaderBuffer[(int)Common.CommunicationMessagePositions.MessageData];
                 }
@@ -165,6 +50,131 @@ namespace Glenshield.Communication
             }
 
         }
+        public int MessageID
+        {
+            get
+            {
+                return messageID;
+            }
+            set
+            {
+                messageID = value;
+            }
+        }
+        public int MessageType
+        {
+            get
+            {
+                return messageType;
+            }
+            set
+            {
+                messageType = value;
+            }
+        }
+        public string SenderID
+        {
+            get
+            {
+                return senderID;
+            }
+            set
+            {
+                senderID = value;
+            }
+        }
+        public string SenderAuthentication
+        {
+            get
+            {
+                return senderAuthentication;
+            }
+            set
+            {
+                senderAuthentication = value;
+            }
+        }
+        public int SenderType
+        {
+            get
+            {
+                return senderType;
+            }
+            set
+            {
+                senderType = value;
+            }
+        }
+        public string RecipientID
+        {
+            get
+            {
+                return recipientID;
+            }
+            set
+            {
+                recipientID = value;
+            }
+        }
+        public int RecipientType
+        {
+            get
+            {
+                return recipientType;
+            }
+            set
+            {
+                recipientType = value;
+            }
+        }
+        public string UserID
+        {
+            get
+            {
+                return userID;
+            }
+            set
+            {
+                userID = value;
+            }
+        }
+        public string UserAuthentication
+        {
+            get
+            {
+                return userAuthentication;
+            }
+            set
+            {
+                userAuthentication = value;
+            }
+        }
+        public string MessageData
+        {
+            get
+            {
+                return messageData;
+            }
+            set
+            {
+                messageData = value;
+            }
+        }
+        public string AllText
+        {
+            get
+            {
+                return allText;
+            }
+            set
+            {
+                allText = value;
+            }
+        }
+
+        #endregion
+
+        #region "Methods"
 
         public string BuildCommunicationMessageText()
         {
@@ -179,5 +189,7 @@ namespace Glenshield.Communication
             return messageStringBuilder.ToString();
 
         }
+
+        #endregion
     }
 }
